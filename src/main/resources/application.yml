@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: "local"
+
+logging:
+  level:
+    ROOT: INFO
+    com.example.carpark: DEBUG
+
+carPark:
+  costPerHour: 2.00
+  capacity: 100
+
+run:
+  numVehiclesToModel: 120
+
+---
+spring:
+  profiles:
+    activate:
+      on-profile: local
